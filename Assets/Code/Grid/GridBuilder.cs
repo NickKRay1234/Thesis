@@ -13,11 +13,8 @@ namespace Code.Grid
 
         private const float CellSize = 3.6f;
 
-        private void OnEnable() =>
-            gridData ??= new GridData();
-        
-        private void Start() => 
-            GenerateGrid();
+        private void OnEnable() => gridData ??= new GridData();
+        private void Start() => GenerateGrid();
 
         public void ClearGrid()
         {
