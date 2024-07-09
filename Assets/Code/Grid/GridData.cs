@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Code
+namespace Code.Grid
 {
     [Serializable]
     public sealed class GridData

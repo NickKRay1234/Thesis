@@ -1,16 +1,17 @@
+using Code.Grid;
 using UnityEditor;
 using UnityEngine;
 
-namespace Code
+namespace Code.Editor
 {
-    [CustomEditor(typeof(GridManager))]
-    public class GridManagerEditor : Editor
+    [CustomEditor(typeof(GridBuilder))]
+    public class GridManagerEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
 
-            GridManager gridManager = (GridManager)target;
+            GridBuilder gridManager = (GridBuilder)target;
 
             if (GUILayout.Button("Generate Grid"))
                 gridManager.GenerateGrid();
