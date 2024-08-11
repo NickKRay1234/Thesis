@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Code.Grid
@@ -13,6 +12,16 @@ namespace Code.Grid
         [Range(0, 10)]
         public int gridHeight = 10;
         
-        public List<GameObject> spawnedObjects = new();
+        [NonSerialized]
+        public Vector2Int StartPoint;
+
+        [NonSerialized]
+        public Vector2Int EndPoint;
+        
+        [NonSerialized]
+        public GameObject[,] SpawnedObjects;
+        
+        public void Initialize() =>
+            SpawnedObjects = new GameObject[gridWidth, gridHeight];
     }
 }

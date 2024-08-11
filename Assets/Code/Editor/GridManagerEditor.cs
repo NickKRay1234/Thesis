@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Code.Editor
 {
     [CustomEditor(typeof(GridBuilder))]
-    public class GridManagerEditor : UnityEditor.Editor
+    public class GridBuilderEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
