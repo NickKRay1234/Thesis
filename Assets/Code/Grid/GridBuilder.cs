@@ -3,39 +3,47 @@ using UnityEngine;
 
 namespace Code.Grid
 {
+    [ExecuteInEditMode]
     public sealed class GridBuilder : MonoBehaviour
     {
         [SerializeField] 
         private GameObject gridPrefab;
-        
+
         [SerializeField]
         private GridData gridData;
 
         private const float CellSize = 3.6f;
+        private IPathFinder _pathFinder;
 
-        private void OnEnable() => gridData ??= new GridData();
-        private void Start() => GenerateGrid();
+        private void OnEnable() =>
+            gridData ??= new GridData();
 
-        public void ClearGrid()
+        private void Start()
         {
-            foreach (var obj in gridData.spawnedObjects.Where(obj => obj is not null))
-                DestroyImmediate(obj);
-            gridData.spawnedObjects.Clear();
+            _pathFinder = new AStarPathFinder(gridData);
+            if (!Application.isPlaying) 
+                GenerateGrid();
         }
+
+        public void ClearGrid() =>
+            GridUtility.ClearGrid(gridData);
 
         public void GenerateGrid()
         {
             ClearGrid();
-
-            for (int x = 0; x < gridData.gridWidth; x++)
-                for (int z = 0; z < gridData.gridHeight; z++)
-                    gridData.spawnedObjects.Add(InstantiateGridObject(CalculateCellPosition(x, z)));
+            gridData.Initialize();
+            GridUtility.GenerateGrid(gridData, gridPrefab, CellSize, transform);
+            GridUtility.PlaceStartAndEndPoints(gridData, gridPrefab, CellSize, transform);
+            HighlightIntermediatePathPoints(gridData, _pathFinder);
         }
 
-        private Vector3 CalculateCellPosition(int x, int z) =>
-            new(x * CellSize, 0, z * CellSize);
+        private void HighlightIntermediatePathPoints(GridData fullGridData, IPathFinder pathFinder)
+        {
+            foreach (Vector2Int point in pathFinder.FindPath(fullGridData.StartPoint, fullGridData.EndPoint).Where(IsNotStartOrEndPoint))
+                GridUtility.ChangeObjectColorAtPoint(fullGridData, point, Color.blue);
+        }
 
-        private GameObject InstantiateGridObject(Vector3 position) =>
-            Instantiate(gridPrefab, position, Quaternion.identity, transform);
+        private bool IsNotStartOrEndPoint(Vector2Int point) => 
+            !point.Equals(gridData.StartPoint) && point != gridData.EndPoint;
     }
 }

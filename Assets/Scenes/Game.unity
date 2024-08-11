@@ -247,9 +247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridPrefab: {fileID: 6378069989528608612, guid: 5bf09a7cdfbbd844d9d540a3cd8b791e, type: 3}
   gridData:
-    gridWidth: 3
-    gridHeight: 7
-    spawnedObjects: []
+    gridWidth: 9
+    gridHeight: 9
 --- !u!4 &799675482
 Transform:
   m_ObjectHideFlags: 0
