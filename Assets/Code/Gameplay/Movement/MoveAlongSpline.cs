@@ -2,47 +2,71 @@ using UnityEngine;
 
 namespace Code.Gameplay.Movement
 {
-    public sealed class MoveAlongSpline : MonoBehaviour
+    public sealed class SplineMover : MonoBehaviour
     {
-        [SerializeField] private Transform _p0;
-        [SerializeField] private Transform _p1;
-        [SerializeField] private Transform _p2;
-        [SerializeField] private float _duration = 5.0f;
+        [SerializeField] private SplineMovementSettings _settings;
 
+        private Spline _spline;
         private float _time;
+        private bool _isMoving;
 
-        private void Update()
+        public bool IsMoving => _isMoving;
+
+        private void FixedUpdate()
+        {
+            if (!_isMoving) return;
+            UpdateSplineMovement();
+        }
+
+        public void StartMoving(Spline spline)
+        {
+            _spline = spline;
+            _time = 0f;
+            _isMoving = true;
+        }
+
+        private void UpdateSplineMovement()
         {
             _time += Time.deltaTime;
-
-            // Ensure the normalized time [0, 1]
-            float t = _time / _duration;
+            float t = _time / _settings.Duration;
 
             if (t > 1.0f)
             {
-                _time = 0f;
-                t = 0f;
+                StopMoving();
+                return;
             }
 
-            Vector3 newPosition = Bezier.GetPoint(_p0.position, _p1.position, _p2.position, t);
-
-            // Update position
+            Vector3 newPosition = CalculateSplinePosition(t);
             transform.position = newPosition;
 
-            // Calculate the next normalization time
-            float nextT = Mathf.Clamp01(t + 0.01f); // Small increment to get the next point
+            UpdateRotation(newPosition, t);
+        }
 
-            // Calculate the next position on the Bezier curve
-            Vector3 nextPosition = Bezier.GetPoint(_p0.position, _p1.position, _p2.position, nextT);
+        private Vector3 CalculateSplinePosition(float t)
+        {
+            Point startPoint = _spline.StartPoint;
+            Point middlePoint = _spline.MiddlePoint;
+            Point endPoint = _spline.EndPoint;
 
-            // Calculate direction to look at next position
+            return Bezier.GetPoint(startPoint.Position, middlePoint.Position, endPoint.Position, t);
+        }
+
+        private void UpdateRotation(Vector3 newPosition, float t)
+        {
+            float nextT = Mathf.Clamp01(t + 0.01f);
+            Vector3 nextPosition = CalculateSplinePosition(nextT);
+
             Vector3 direction = (nextPosition - newPosition).normalized;
-            if (direction != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(direction);
-                transform.rotation =
-                    Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * 360f);
-            }
+            if (direction == Vector3.zero) return;
+
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * 360f);
+        }
+
+        private void StopMoving()
+        {
+            _time = 0f;
+            _isMoving = false;
         }
     }
 }

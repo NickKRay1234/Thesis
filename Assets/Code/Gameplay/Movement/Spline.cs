@@ -1,12 +1,16 @@
-using UnityEngine;
-
 namespace Code.Gameplay.Movement
 {
-    [System.Serializable]
-    public struct Spline
+    public sealed class Spline
     {
-        public Transform P0;
-        public Transform P1;
-        public Transform P2;
+        public Point StartPoint { get; }
+        public Point MiddlePoint { get; }
+        public Point EndPoint { get; }
+
+        public Spline(Point startPoint, Point middlePoint, Point endPoint)
+        {
+            StartPoint = startPoint;
+            MiddlePoint = middlePoint;
+            EndPoint = endPoint;
+        }
     }
 }

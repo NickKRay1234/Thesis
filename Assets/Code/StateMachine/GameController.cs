@@ -1,4 +1,3 @@
-using StateMachine;
 using UnityEngine;
 
 namespace Code.StateMachine
