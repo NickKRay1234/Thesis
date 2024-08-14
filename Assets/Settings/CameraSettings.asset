@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecc1e77a1bf47a8a1cfc0d885fd7ca5, type: 3}
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
-  followX: 0
+  followX: 1
   followY: 1
   followZ: 1

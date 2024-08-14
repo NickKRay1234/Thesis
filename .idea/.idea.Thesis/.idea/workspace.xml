@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72949b2c-3280-413d-99f5-5a02dd77cae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/IMovable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/IMovable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/IPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/IPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/MoveAlongSpline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/MoveAlongSpline.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMover.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMovementSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMovementSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineTriggerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineTriggerHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/AbstractState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/AbstractState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/LoseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/LoseState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/WinState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/WinState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LeftRail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LeftRail.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/CameraSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/CameraSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +106,7 @@
       <workItem from="1723552042416" duration="7000" />
       <workItem from="1723573275760" duration="4000" />
       <workItem from="1723573282396" duration="9210000" />
-      <workItem from="1723646450456" duration="6006000" />
+      <workItem from="1723646450456" duration="8017000" />
     </task>
     <servers />
   </component>

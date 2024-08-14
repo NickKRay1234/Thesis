@@ -4,7 +4,6 @@ namespace Code.StateMachine
 {
     public sealed class GameplayState : AbstractState
     {
-        
         public GameplayState(GameStateMachine gameStateMachine) : 
             base(gameStateMachine) { }
 

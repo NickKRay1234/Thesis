@@ -18,5 +18,6 @@ namespace Code.Gameplay.Movement
         
         private void OnTriggerStay(Collider other) => 
             _moveAlongSpine.TryStartMovement(other);
+        
     }
 }
