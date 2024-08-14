@@ -16,6 +16,7 @@ namespace Code.Gameplay.Movement
             _moveAlongSpine = new SplineMover(this, _settings);
         }
         
+        // TODO: Should be fixed. Optimization question.
         private void OnTriggerStay(Collider other) => 
             _moveAlongSpine.TryStartMovement(other);
         

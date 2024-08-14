@@ -7,12 +7,16 @@
     <list default="true" id="72949b2c-3280-413d-99f5-5a02dd77cae8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineTriggerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineTriggerHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LeftRail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LeftRail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMovementSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMovementSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ForwardHorizontalRail.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ForwardHorizontalRail.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ForwardVerticalRail.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ForwardVerticalRail.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LeftRail.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LeftRail.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RightRail.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RightRail.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/CameraSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/CameraSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
   &quot;keyToString&quot;: {
     &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rails&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -82,10 +86,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="48539">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="48539" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -106,7 +110,8 @@
       <workItem from="1723552042416" duration="7000" />
       <workItem from="1723573275760" duration="4000" />
       <workItem from="1723573282396" duration="9210000" />
-      <workItem from="1723646450456" duration="8017000" />
+      <workItem from="1723646450456" duration="8436000" />
+      <workItem from="1723663389737" duration="709000" />
     </task>
     <servers />
   </component>
