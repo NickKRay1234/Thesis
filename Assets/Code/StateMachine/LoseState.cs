@@ -2,7 +2,7 @@ namespace Code.StateMachine
 {
     public sealed class LoseState : AbstractState
     {
-        public LoseState(GameController gameController) : base(gameController)
+        public LoseState(GameStateMachine gameStateMachine) : base(gameStateMachine)
         {
         }
 

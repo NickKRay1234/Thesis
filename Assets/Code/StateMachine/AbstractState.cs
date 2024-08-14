@@ -1,14 +1,13 @@
-using StateMachine;
 using UnityEngine;
 
 namespace Code.StateMachine
 {
     public class AbstractState : IState
     {
-        protected readonly GameController GameController;
+        protected GameStateMachine GameStateMachine;
 
-        protected AbstractState(GameController gameController) => 
-            GameController = gameController;
+        protected AbstractState(GameStateMachine gameStateMachine) => 
+            GameStateMachine = gameStateMachine;
 
         public virtual void Enter()
         {

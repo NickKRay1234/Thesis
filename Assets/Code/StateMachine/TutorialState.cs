@@ -1,29 +1,20 @@
 using UnityEngine;
+using Zenject;
 
 namespace Code.StateMachine
 {
     public sealed class TutorialState : AbstractState
     {
-        
-        public TutorialState(GameController gameController) : base(gameController)
-        {
-        }
 
-        public override void Enter()
-        {
-            base.Enter();
-        }
-        
         public override void Execute()
         {
             base.Execute();
             if(Input.anyKeyDown)
-                GameController.ChangeState(new GameplayState(GameController));
+                GameStateMachine.ChangeState(new GameplayState(GameStateMachine));
         }
-        
-        public override void Exit()
+
+        public TutorialState(GameStateMachine gameStateMachine) : base(gameStateMachine)
         {
-            base.Exit();
         }
     }
 }

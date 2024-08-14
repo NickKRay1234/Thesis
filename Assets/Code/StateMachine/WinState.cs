@@ -4,7 +4,7 @@ namespace StateMachine
 {
     public sealed class WinState : AbstractState
     {
-        public WinState(GameController gameController) : base(gameController)
+        public WinState(GameStateMachine gameStateMachine) : base(gameStateMachine)
         {
         }
 
