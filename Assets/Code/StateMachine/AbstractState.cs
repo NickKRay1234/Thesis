@@ -4,7 +4,7 @@ namespace Code.StateMachine
 {
     public class AbstractState : IState
     {
-        protected GameStateMachine GameStateMachine;
+        protected readonly GameStateMachine GameStateMachine;
 
         protected AbstractState(GameStateMachine gameStateMachine) => 
             GameStateMachine = gameStateMachine;

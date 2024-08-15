@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72949b2c-3280-413d-99f5-5a02dd77cae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotationSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotationSettings.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineControlPoints.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineContainer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineControlPoints.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/SplineMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/AbstractState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/AbstractState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,45 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/GameStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/SceneInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/StateMachine/TutorialState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.11/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/606c2e0a56af495988c860a4ac613e74469200/c0/03dcc828/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f67e201673a04baeb51bfe98d31580c3175c00/31/548b5eff/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -111,7 +147,7 @@
       <workItem from="1723573282396" duration="9210000" />
       <workItem from="1723646450456" duration="8436000" />
       <workItem from="1723663389737" duration="1311000" />
-      <workItem from="1723718730994" duration="3490000" />
+      <workItem from="1723718730994" duration="6254000" />
     </task>
     <servers />
   </component>

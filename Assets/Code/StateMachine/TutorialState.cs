@@ -9,7 +9,7 @@ namespace Code.StateMachine
         {
             base.Execute();
             if(Input.anyKeyDown)
-                GameStateMachine.ChangeState(new GameplayState(GameStateMachine));
+                GameStateMachine.ChangeOnGameplayState();
         }
 
         public TutorialState(GameStateMachine gameStateMachine) : base(gameStateMachine)

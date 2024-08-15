@@ -1,9 +1,17 @@
+using System.Collections.Generic;
+using Code.Gameplay.Movement;
+using Zenject;
+
 namespace Code.StateMachine
 {
     public sealed class GameplayState : AbstractState
     {
-        public GameplayState(GameStateMachine gameStateMachine) : 
-            base(gameStateMachine) { }
+        private readonly List<RotateOnClick> _rotateOnClickInstances;
+
+        [Inject]
+        public GameplayState(GameStateMachine gameStateMachine, List<RotateOnClick> rotateOnClickInstances) 
+            : base(gameStateMachine) =>
+            _rotateOnClickInstances = rotateOnClickInstances;
 
 
         public override void Execute()
@@ -11,6 +19,9 @@ namespace Code.StateMachine
             base.Execute();
             if (!GameStateMachine.Player.GetSplineMover().IsMoving) return;
             GameStateMachine.Player.GetSplineMover().UpdateSplineMovement();
+            
+            foreach (var rotateOnClick in _rotateOnClickInstances)
+                rotateOnClick.CheckForRotation();
         }
     }
 }

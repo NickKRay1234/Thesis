@@ -20,40 +20,51 @@ namespace Code.Gameplay.Movement
 
         private void Start()
         {
-            _splineControlPoints = GetComponent<SplineControlPoints>();
-            _renderer = GetComponent<Renderer>();
-            CheckAndSetMaterial();
+            InitializeComponents();
+            UpdateMaterialBasedOnAngle();
         }
 
-        private void Update()
+        public void CheckForRotation()
         {
             if (Input.GetMouseButtonUp(0) && !IsRotating)
                 StartRotation();
         }
 
+        private void InitializeComponents()
+        {
+            _splineControlPoints = GetComponent<SplineControlPoints>();
+            _renderer = GetComponent<Renderer>();
+        }
+
         private void StartRotation()
         {
             IsRotating = true;
+            RotateAndHandleCompletion();
+        }
+
+        private void RotateAndHandleCompletion() =>
             transform.DORotate(new Vector3(BLOCKED_AXIS, transform.eulerAngles.y + ROTATION_ANGLE, BLOCKED_AXIS), _rotationSettings.RotationSpeed)
                 .SetEase(_rotationSettings.RotationEase)
                 .OnComplete(OnRotationComplete);
-        }
 
         private void OnRotationComplete()
         {
             IsRotating = false;
             _splineControlPoints.InitializeSplinePoints();
-            CheckAndSetMaterial();
+            UpdateMaterialBasedOnAngle();
             _player.GetSplineMover()?.RestartSplineMovement(transform);
         }
 
-        private void CheckAndSetMaterial()
-        {
-            float currentAngle = transform.eulerAngles.y % 360;
-            bool isCorrectAngle = _rotationSettings.CorrectAngles.Any(angle => Mathf.Abs(currentAngle - angle) <= ANGLE_TOLERANCE || Mathf.Abs((currentAngle - 360) - angle) <= ANGLE_TOLERANCE);
+        private void UpdateMaterialBasedOnAngle() =>
+            SetMaterial(IsCorrectAngle(transform.eulerAngles.y));
 
-            Material newMaterial = isCorrectAngle ? _rotationSettings.CorrectMaterial : _rotationSettings.IncorrectMaterial;
-            _renderer.material = newMaterial;
+        private bool IsCorrectAngle(float currentAngle)
+        {
+            currentAngle %= 360;
+            return _rotationSettings.CorrectAngles.Any(angle => Mathf.Abs(currentAngle - angle) <= ANGLE_TOLERANCE || Mathf.Abs((currentAngle - 360) - angle) <= ANGLE_TOLERANCE);
         }
+
+        private void SetMaterial(bool isCorrectAngle) =>
+            _renderer.material = isCorrectAngle ? _rotationSettings.CorrectMaterial : _rotationSettings.IncorrectMaterial;
     }
 }

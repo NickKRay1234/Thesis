@@ -25,6 +25,21 @@ namespace Code.StateMachine
                 .Bind<IMovable>()
                 .To<SplineMover>()
                 .AsSingle();
+            
+            Container
+                .Bind<RotateOnClick>()
+                .FromComponentsInHierarchy()
+                .AsSingle();
+            
+            Container
+                .Bind<GameplayState>()
+                .AsSingle()
+                .NonLazy();
+            
+            Container
+                .Bind<TutorialState>()
+                .AsSingle()
+                .NonLazy();
         }
     }
 }
