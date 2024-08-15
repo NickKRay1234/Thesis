@@ -69,27 +69,36 @@ namespace Code.Gameplay.Movement
         {
             if (!CanStartMovement(other)) return;
 
-            SplineContainer container = other.GetComponent<SplineContainer>();
-            if (container == null) return;
+            SplineControlPoints controlPoints = other.GetComponent<SplineControlPoints>();
+            if (controlPoints == null) return;
 
-            Spline spline = CreateSplineFromContainer(container);
+            Spline spline = CreateSplineFromContainer(controlPoints);
             StartMoving(spline);
 
             _lastPlatform = other.transform;
         }
         
         private bool CanStartMovement(Collider other) =>
-            !IsMoving && other.transform != _lastPlatform && other.GetComponent<SplineContainer>();
+            !IsMoving && other.transform != _lastPlatform && other.GetComponent<SplineControlPoints>();
 
-        private Spline CreateSplineFromContainer(SplineContainer container) => new(
-            container.GetControlPoint(0) ?? new Point(Vector3.zero),
-            container.GetControlPoint(1) ?? new Point(Vector3.zero),
-            container.GetControlPoint(2) ?? new Point(Vector3.zero));
+        private Spline CreateSplineFromContainer(SplineControlPoints controlPoints) => new(
+            controlPoints.GetControlPoint(0) ?? new Point(Vector3.zero),
+            controlPoints.GetControlPoint(1) ?? new Point(Vector3.zero),
+            controlPoints.GetControlPoint(2) ?? new Point(Vector3.zero));
 
         private void StopMoving()
         {
             _time = 0f;
             _isMoving = false;
+        }
+        
+        public void RestartSplineMovement(Transform currentPlatform)
+        {
+            if (_lastPlatform != currentPlatform) return;
+            SplineControlPoints controlPoints = currentPlatform.GetComponent<SplineControlPoints>();
+            if (controlPoints == null) return;
+
+            _spline = CreateSplineFromContainer(controlPoints);
         }
     }
 }
