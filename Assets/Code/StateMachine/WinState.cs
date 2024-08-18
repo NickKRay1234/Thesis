@@ -1,26 +1,23 @@
-using Code.StateMachine;
+using UnityEngine;
 
-namespace StateMachine
+namespace Code.StateMachine
 {
     public sealed class WinState : AbstractState
     {
-        public WinState(GameStateMachine gameStateMachine) : base(gameStateMachine)
-        {
-        }
+        private readonly GameObject _winScreen;
+        public WinState(GameStateMachine gameStateMachine, GameObject winScreen) : base(gameStateMachine) => 
+            _winScreen = winScreen;
 
         public override void Enter()
         {
             base.Enter();
+            _winScreen.SetActive(true);
         }
-        
-        public override void Execute()
-        {
-            base.Execute();
-        }
-        
+
         public override void Exit()
         {
             base.Exit();
+            _winScreen.SetActive(false);
         }
     }
 }

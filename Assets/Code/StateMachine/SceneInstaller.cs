@@ -8,6 +8,9 @@ namespace Code.StateMachine
     {
         [SerializeField] 
         private Player _player;
+
+        [SerializeField] 
+        private TutorialScreen _tutorialScreen;
         
         public override void InstallBindings()
         {
@@ -15,6 +18,12 @@ namespace Code.StateMachine
                 .Bind<IPlayer>()
                 .FromInstance(_player)
                 .AsSingle();
+            
+            Container
+                .Bind<TutorialScreen>()
+                .FromInstance(_tutorialScreen)
+                .AsSingle();
+
             
             Container
                 .BindInterfacesAndSelfTo<GameStateMachine>()

@@ -16,18 +16,12 @@ namespace Code.Gameplay.Movement
 
         private SplineControlPoints _splineControlPoints;
         private Renderer _renderer;
-        private bool IsRotating { get; set; }
+        public bool IsRotating { get; private set; }
 
         private void Start()
         {
             InitializeComponents();
             UpdateMaterialBasedOnAngle();
-        }
-
-        public void CheckForRotation()
-        {
-            if (Input.GetMouseButtonUp(0) && !IsRotating)
-                StartRotation();
         }
 
         private void InitializeComponents()
@@ -36,7 +30,7 @@ namespace Code.Gameplay.Movement
             _renderer = GetComponent<Renderer>();
         }
 
-        private void StartRotation()
+        public void StartRotatableRailsRotate()
         {
             IsRotating = true;
             RotateAndHandleCompletion();

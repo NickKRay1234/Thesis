@@ -1,24 +1,23 @@
+using UnityEngine;
+
 namespace Code.StateMachine
 {
     public sealed class LoseState : AbstractState
     {
-        public LoseState(GameStateMachine gameStateMachine) : base(gameStateMachine)
-        {
-        }
+        private readonly GameObject _loseScreen;
+        public LoseState(GameStateMachine gameStateMachine, GameObject loseScreen) : base(gameStateMachine) => 
+            _loseScreen = loseScreen;
 
         public override void Enter()
         {
             base.Enter();
+            _loseScreen.SetActive(true);
         }
-        
-        public override void Execute()
-        {
-            base.Execute();
-        }
-        
+
         public override void Exit()
         {
             base.Exit();
+            _loseScreen.SetActive(false);
         }
     }
 }

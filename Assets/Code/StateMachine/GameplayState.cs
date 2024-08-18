@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Linq;
 using Code.Gameplay.Movement;
+using UnityEngine;
 using Zenject;
 
 namespace Code.StateMachine
@@ -19,9 +21,9 @@ namespace Code.StateMachine
             base.Execute();
             if (!GameStateMachine.Player.GetSplineMover().IsMoving) return;
             GameStateMachine.Player.GetSplineMover().UpdateSplineMovement();
-            
-            foreach (var rotateOnClick in _rotateOnClickInstances)
-                rotateOnClick.CheckForRotation();
+
+            foreach (var rotateOnClick in _rotateOnClickInstances.Where(rotateOnClick => Input.GetMouseButtonDown(0) && !rotateOnClick.IsRotating))
+                rotateOnClick.StartRotatableRailsRotate();
         }
     }
 }

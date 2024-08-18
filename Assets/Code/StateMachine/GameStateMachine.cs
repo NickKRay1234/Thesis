@@ -8,11 +8,12 @@ namespace Code.StateMachine
     {
         [Inject] private IPlayer _player;
         [Inject] private GameplayState _gameplayState;
+        [Inject] private TutorialScreen _tutorialScreen;
         private IState _currentState;
         
         public IPlayer Player => _player;
 
-        private void ChangeState(IState newState)
+        public void ChangeState(IState newState)
         {
             _currentState?.Exit();
             _currentState = newState;
@@ -23,7 +24,7 @@ namespace Code.StateMachine
             _currentState?.Execute();
         
         public void Initialize() =>
-            ChangeState(new TutorialState(this));
+            ChangeState(new TutorialState(this, _tutorialScreen));
         
         public void ChangeOnGameplayState() =>
             ChangeState(_gameplayState);
