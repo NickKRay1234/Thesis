@@ -6,6 +6,7 @@ namespace Code.StateMachine
     {
         protected readonly GameStateMachine GameStateMachine;
 
+
         protected AbstractState(GameStateMachine gameStateMachine) => 
             GameStateMachine = gameStateMachine;
 
@@ -18,7 +19,6 @@ namespace Code.StateMachine
 
         public virtual void Execute()
         {
-            
         }
 
         public virtual void Exit()

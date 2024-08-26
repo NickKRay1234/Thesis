@@ -21,9 +21,17 @@ namespace Code.StateMachine
             base.Execute();
             if (!GameStateMachine.Player.GetSplineMover().IsMoving) return;
             GameStateMachine.Player.GetSplineMover().UpdateSplineMovement();
-
+            
+            // TODO: Swipe logic
             foreach (var rotateOnClick in _rotateOnClickInstances.Where(rotateOnClick => Input.GetMouseButtonDown(0) && !rotateOnClick.IsRotating))
                 rotateOnClick.StartRotatableRailsRotate();
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+            foreach (var rotateOnClick in _rotateOnClickInstances) 
+                rotateOnClick.CancelRotation();
         }
     }
 }
