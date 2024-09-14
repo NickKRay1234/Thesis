@@ -34,10 +34,10 @@ namespace Code.Gameplay.Movement
             _renderer = GetComponent<Renderer>();
         }
 
-        public void StartRotatableRailsRotate()
+        public void StartRotatableRailRotate(bool rotateRight = true)
         {
             IsRotating = true;
-            RotateAndHandleCompletion();
+            RotateAndHandleCompletion(rotateRight);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -58,10 +58,11 @@ namespace Code.Gameplay.Movement
             _player.IsPlayerOnRotatableRail = isOnRail;
         }
 
-        private void RotateAndHandleCompletion()
+        private void RotateAndHandleCompletion(bool rotateRight)
         {
             _rotationTween?.Kill();
-            _rotationTween = transform.DORotate(new Vector3(BLOCKED_AXIS, transform.eulerAngles.y + ROTATION_ANGLE, BLOCKED_AXIS), _rotationSettings.RotationSpeed)
+            float rotationAngle = rotateRight ? ROTATION_ANGLE : -ROTATION_ANGLE;
+            _rotationTween = transform.DORotate(new Vector3(BLOCKED_AXIS, transform.eulerAngles.y + rotationAngle, BLOCKED_AXIS), _rotationSettings.RotationSpeed)
                 .SetUpdate(true)
                 .SetEase(_rotationSettings.RotationEase)
                 .OnComplete(OnRotationComplete);

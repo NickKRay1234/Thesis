@@ -15,6 +15,11 @@ namespace Code.StateMachine
         public override void InstallBindings()
         {
             Container
+                .Bind<ISwipeHandler>()
+                .To<SwipeHandler>()
+                .AsSingle();
+            
+            Container
                 .Bind<IPlayer>()
                 .FromInstance(_player)
                 .AsSingle();
