@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72949b2c-3280-413d-99f5-5a02dd77cae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/ISwipeHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/ISwipeHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SwipeHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SwipeHandler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotatableRail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotatableRail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/SwipeHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SwipeHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

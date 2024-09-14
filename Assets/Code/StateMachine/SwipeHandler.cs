@@ -45,19 +45,13 @@ namespace Code.StateMachine
         private void HandleMouseSwipe()
         {
             if (Input.GetMouseButtonDown(0))
-            {
                 StartSwipe(Input.mousePosition);
-            }
 
             if (Input.GetMouseButtonUp(0) && IsSwiping)
-            {
                 EndSwipe(Input.mousePosition);
-            }
 
             if (Input.GetMouseButtonUp(0))
-            {
                 CancelSwipe();
-            }
         }
 
         private void StartSwipe(Vector2 position)
