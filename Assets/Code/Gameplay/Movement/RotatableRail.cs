@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
@@ -5,10 +6,11 @@ using Zenject;
 
 namespace Code.Gameplay.Movement
 {
-    public sealed class RotateOnClick : MonoBehaviour
+    public sealed class RotatableRail : MonoBehaviour
     {
         [Inject] private IPlayer _player;
         [SerializeField] private RotationSettings _rotationSettings;
+        [SerializeField] private float _exitDelay = 0.5f; 
 
         private const float ROTATION_ANGLE = 90f;
         private const float BLOCKED_AXIS = 0f;
@@ -36,6 +38,24 @@ namespace Code.Gameplay.Movement
         {
             IsRotating = true;
             RotateAndHandleCompletion();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.layer == _player.TrainLayerName) 
+                _player.IsPlayerOnRotatableRail = true;
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject.layer == _player.TrainLayerName)
+                StartCoroutine(SetPlayerOnRotatableRailWithDelay(false, _exitDelay));
+        }
+
+        private IEnumerator SetPlayerOnRotatableRailWithDelay(bool isOnRail, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            _player.IsPlayerOnRotatableRail = isOnRail;
         }
 
         private void RotateAndHandleCompletion()

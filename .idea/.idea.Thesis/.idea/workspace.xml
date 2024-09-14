@@ -5,48 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72949b2c-3280-413d-99f5-5a02dd77cae8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SettingsState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SettingsState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/AbstractState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/AbstractState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/IPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/IPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotatableRail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotateOnClick.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/Movement/RotatableRail.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleUsageUniTask.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleUsageUniTask.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/AutoLoader/Scene1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/AutoLoader/Scene1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/AutoLoader/Scene2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/AutoLoader/Scene2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/AutoLoader/Scene3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/AutoLoader/Scene3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/Decorators/Scene1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/Decorators/Scene1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/Decorators/Scene2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneContractTests/Decorators/Scene2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestDestructionOrder/EmptyScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestDestructionOrder/EmptyScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestDestructionOrder/TestDestructionOrder1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestDestructionOrder/TestDestructionOrder1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestDestructionOrder/TestDestructionOrder2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestDestructionOrder/TestDestructionOrder2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestSceneContextEvents/TestSceneContextEvents.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestSceneContextEvents/TestSceneContextEvents.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestSceneContextEvents/TestSceneContextEventsSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestSceneContextEvents/TestSceneContextEventsSettings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestSceneContextEvents/TestSceneContextEventsSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/SceneTests/TestSceneContextEvents/TestSceneContextEventsSettings.lighting.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Asteroids.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Asteroids.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Asteroids.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Asteroids.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/AsteroidsSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/AsteroidsSettings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/AsteroidsSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/AsteroidsSettings.lighting.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scenes/SpaceFighter.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scenes/SpaceFighter.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProgressBarController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProgressBarController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneControllerUniTask.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneControllerUniTask.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LoseScreenActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LoseScreenActivator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/instrument.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/instrument.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/LEVEL 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +26,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LoseScreenActivator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Station.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.11/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/606c2e0a56af495988c860a4ac613e74469200/c0/03dcc828/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f67e201673a04baeb51bfe98d31580c3175c00/31/548b5eff/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f67e201673a04baeb51bfe98d31580c3175c00/36/9d4e33d8/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -120,10 +97,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18937">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="18937" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -153,6 +130,7 @@
       <workItem from="1724177345844" duration="6590000" />
       <workItem from="1724275481285" duration="2367000" />
       <workItem from="1724360405844" duration="1698000" />
+      <workItem from="1725816963408" duration="6671000" />
     </task>
     <servers />
   </component>

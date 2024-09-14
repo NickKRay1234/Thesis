@@ -8,10 +8,10 @@ namespace Code.StateMachine
 {
     public sealed class GameplayState : AbstractState
     {
-        private readonly List<RotateOnClick> _rotateOnClickInstances;
+        private readonly List<RotatableRail> _rotateOnClickInstances;
 
         [Inject]
-        public GameplayState(GameStateMachine gameStateMachine, List<RotateOnClick> rotateOnClickInstances) 
+        public GameplayState(GameStateMachine gameStateMachine, List<RotatableRail> rotateOnClickInstances) 
             : base(gameStateMachine) =>
             _rotateOnClickInstances = rotateOnClickInstances;
 
@@ -21,6 +21,7 @@ namespace Code.StateMachine
             base.Execute();
             if (!GameStateMachine.Player.GetSplineMover().IsMoving) return;
             GameStateMachine.Player.GetSplineMover().UpdateSplineMovement();
+            if (GameStateMachine.Player.IsPlayerOnRotatableRail) return;
             
             // TODO: Swipe logic
             foreach (var rotateOnClick in _rotateOnClickInstances.Where(rotateOnClick => Input.GetMouseButtonDown(0) && !rotateOnClick.IsRotating))

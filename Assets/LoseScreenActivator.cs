@@ -5,7 +5,7 @@ using Zenject;
 
 public sealed class LoseScreenActivator : MonoBehaviour
 {
-    private RotateOnClick _rotateOnClick;
+    private RotatableRail _rotatableRail;
 
     [Inject] 
     private GameStateMachine _stateMachine;
@@ -14,12 +14,12 @@ public sealed class LoseScreenActivator : MonoBehaviour
     private GameObject _loseScreen;
 
     private void Start() =>
-        _rotateOnClick = GetComponent<RotateOnClick>();
+        _rotatableRail = GetComponent<RotatableRail>();
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.GetComponent<Player>()) return;
-        if (!_rotateOnClick.IsCorrectAngle(transform.eulerAngles.y))
+        if (!_rotatableRail.IsCorrectAngle(transform.eulerAngles.y))
             _stateMachine.ChangeState(new LoseState(_stateMachine, _loseScreen));
     }
 }

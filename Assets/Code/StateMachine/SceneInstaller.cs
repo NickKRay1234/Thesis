@@ -36,7 +36,7 @@ namespace Code.StateMachine
                 .AsSingle();
             
             Container
-                .Bind<RotateOnClick>()
+                .Bind<RotatableRail>()
                 .FromComponentsInHierarchy()
                 .AsSingle();
             

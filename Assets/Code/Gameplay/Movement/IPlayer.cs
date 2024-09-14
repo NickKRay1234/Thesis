@@ -6,5 +6,7 @@ namespace Code.Gameplay.Movement
     {
         Transform GetTransform();
         SplineMover GetSplineMover();
+        bool IsPlayerOnRotatableRail { get; set; }
+        public LayerMask TrainLayerName { get; set; }
     }
 }
