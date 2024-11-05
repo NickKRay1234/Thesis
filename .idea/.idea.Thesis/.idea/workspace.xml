@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72949b2c-3280-413d-99f5-5a02dd77cae8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/Menu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/Menu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/MenuState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/MenuState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LevelBoxAnimatedIndicator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/LevelBoxAnimatedIndicator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Thesis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/SwipeHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SwipeHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Gameplay/TutorialScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Gameplay/TutorialScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/GameStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/SceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StateMachine/TutorialState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Zenject-ReflectionBaking.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/Signals/Zenject-Signals.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LEVELS/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LEVELS/Menu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +30,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/mykolakalchuk/Documents/University/Thesis/Assets/Code/Gameplay/Movement/Player.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/LoseScreenActivator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Station.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SwipeDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@14.0.11/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/606c2e0a56af495988c860a4ac613e74469200/c0/03dcc828/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f67e201673a04baeb51bfe98d31580c3175c00/31/548b5eff/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,6 +131,8 @@
       <workItem from="1725816963408" duration="6671000" />
       <workItem from="1726346942590" duration="626000" />
       <workItem from="1726347971001" duration="749000" />
+      <workItem from="1730759870525" duration="4971000" />
+      <workItem from="1730834194134" duration="674000" />
     </task>
     <servers />
   </component>

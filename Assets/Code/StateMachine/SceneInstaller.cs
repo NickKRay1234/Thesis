@@ -1,3 +1,4 @@
+using Code.Gameplay;
 using Code.Gameplay.Movement;
 using UnityEngine;
 using Zenject;
@@ -11,9 +12,13 @@ namespace Code.StateMachine
 
         [SerializeField] 
         private TutorialScreen _tutorialScreen;
+
+        [SerializeField] 
+        private Menu _menu;
         
         public override void InstallBindings()
         {
+            
             Container
                 .Bind<ISwipeHandler>()
                 .To<SwipeHandler>()
@@ -53,6 +58,11 @@ namespace Code.StateMachine
             Container
                 .Bind<TutorialState>()
                 .AsSingle()
+                .NonLazy();
+            
+            Container
+                .Bind<Menu>()
+                .FromInstance(_menu)
                 .NonLazy();
         }
     }

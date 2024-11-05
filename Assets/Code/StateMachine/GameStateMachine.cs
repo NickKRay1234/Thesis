@@ -1,4 +1,3 @@
-using System;
 using Code.Gameplay.Movement;
 using Zenject;
 using IInitializable = Zenject.IInitializable;
@@ -9,10 +8,10 @@ namespace Code.StateMachine
     {
         [Inject] private IPlayer _player;
         [Inject] private GameplayState _gameplayState;
-        [Inject] private TutorialScreen _tutorialScreen;
+        [Inject] private Menu _menu;
 
         public IPlayer Player => _player;
-        public IState CurrentState { get; private set; }
+        private IState CurrentState { get; set; }
 
         public void ChangeState(IState newState)
         {
@@ -24,7 +23,7 @@ namespace Code.StateMachine
         public void Tick() => CurrentState?.Execute();
 
         public void Initialize() =>
-            ChangeState(new TutorialState(this, _tutorialScreen));
+            ChangeState(new MenuState(this, _menu));
         
         public void ChangeOnGameplayState() =>
             ChangeState(_gameplayState);
